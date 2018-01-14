@@ -1,0 +1,80 @@
+html,body,#root,{
+    height: 100%;
+}
+
+.board{
+    margin: 50px auto;
+    width: 409px;
+}
+.clearfix{
+    clear: both;
+}
+
+
+.flip {
+    -webkit-perspective: 800;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 1px;
+    float:left;
+}
+.flip .card.flipped {
+    -webkit-transform: rotatex(-180deg);
+}
+.flip .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+}
+.flip .card .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    z-index: 2;
+
+}
+.flip .card .front {
+    position: absolute;
+    z-index: 1;
+    background: lightsteelblue;
+    color: white;
+    cursor: pointer;
+}
+.flip .card .back {
+    -webkit-transform: rotatex(-180deg);
+    background: white;
+    color: black;
+}
+
+.flip .card .back.styleFace{
+    background: green;
+}
+
+
+.flip .card .back.cardFace1{
+    background-color: #0086B3;
+}
+.flip .card .back.cardFace2{
+    background-color: gold;
+}
+.flip .card .back.cardFace3{
+    background-color: indianred;
+}
+.flip .card .back.cardFace4{
+    background-color: darkmagenta;
+}
+.flip .card .back.cardFace5{
+    background-color: lightseagreen;
+}
+.flip .card .back.cardFace6{
+    background-color: hotpink;
+}
+.flip .card .back.cardFace7{
+    background-color: mediumslateblue;
+}
+.flip .card .back.cardFace8{
+    background-color: palegreen;
+}
