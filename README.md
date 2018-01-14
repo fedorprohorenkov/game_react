@@ -1,1 +1,1 @@
-##Game on react&redux by Fedor Prokhorenkov
+# Game on react&redux by Fedor Prokhorenkov
